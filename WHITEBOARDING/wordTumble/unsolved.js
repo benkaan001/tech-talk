@@ -11,7 +11,7 @@
 // Strings will only consist of letters and spaces
 // Spaces will be included only to separate words
 
-const wordTumble = () => {};
+const wordTumble = (str) => {};
 
 // Test cases
 console.log(wordTumble('Hello this is a fantastic example')); //olleH this is a citsatnaf elpmaxe

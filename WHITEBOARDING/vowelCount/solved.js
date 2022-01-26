@@ -5,11 +5,12 @@
 // the input string will consist of lower case letters
 
 const countTheVowels = (str) => {
-  let vowels = ['a', 'e', 'i', 'o', 'u'];
-  let filtered = str.split('').filter((letter) => {
-    return vowels.includes(letter) ? 1 : 0;
-  }); //  [ 'e', 'o', 'o' ]
-  return filtered.length;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let counter = 0;
+  const myString = str.split('').map((letter) => {
+    return vowels.includes(letter) ? counter++ : 0;
+  });
+  return counter;
 };
 
 console.log(countTheVowels('hello world')); // 3

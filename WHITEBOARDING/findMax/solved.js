@@ -3,14 +3,12 @@
 const arr = [5, 1, 3, 2, 6];
 
 const findMax = (array) => {
-  let max = [];
-
   return array.reduce((acc, curr) => {
-    console.log(`acc: ${acc} vs curr: ${curr}`);
+    // console.log(acc, curr);
     if (curr > acc) {
-      max = curr;
+      acc = curr;
     }
-    return max;
+    return acc;
   }, 0);
 };
 
