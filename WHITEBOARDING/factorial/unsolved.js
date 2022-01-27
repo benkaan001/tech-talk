@@ -1,5 +1,5 @@
 // accept only positive numbers
 
-const factorialize = () => {};
+const factorialize = (num) => {};
 
 console.log(factorialize(5));
