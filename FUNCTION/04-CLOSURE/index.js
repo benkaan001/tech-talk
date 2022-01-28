@@ -1,0 +1,5 @@
+/* 
+
+A closure is a function that preserves the outer scope in its inner scope.
+
+*/
