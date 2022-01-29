@@ -17,27 +17,6 @@ const squareMe = (num) => {
 console.log(squareMe(2112)); // 4114
 console.log(squareMe(444)); // 161616
 
-//*******************************************************************/
-
-//--------- NEW STUFF ------------//
-
-// Math.pow(baseNumber, exponent)
-
-const squared = (num) => {
-  return Math.pow(num, 2);
-};
-
-console.log(squared(5)); // 5
-
-// -------------------------------------- //
-const quadrupled = (num) => {
-  return Math.pow(num, 4);
-};
-
-console.log(quadrupled(5)); //625
-
-//*******************************************************************/
-
 // ------------- USING LOOP -------------- //
 
 const squareMeLoop = (num) => {

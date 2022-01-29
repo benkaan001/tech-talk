@@ -4,7 +4,7 @@
 // For example, if we run 2112 through the function,
 //4114 will come out, because 2 squared is 4 and 1 squared is 1.
 
-const squareMe = () => {};
+const squareMe = (num) => {};
 
 // Test Cases
 console.log(squareMe(2112)); // 4114

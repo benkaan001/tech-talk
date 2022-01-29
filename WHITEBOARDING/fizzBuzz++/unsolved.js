@@ -8,9 +8,7 @@ the sum of all mulitples of 3 or 5 below the number passed in as a parameter.
 However, if the number is a multiple of 3 and 5 (i.e. 15), 
 you should only count it once in your final value. */
 
-const fizzBuzzPlusPlus = (number) => {
-  // YOUR CODE HERE
-};
+const fizzBuzzPlusPlus = (number) => {};
 
 // Test cases
 console.log(fizzBuzzPlusPlus(10)); // 23

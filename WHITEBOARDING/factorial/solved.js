@@ -9,6 +9,15 @@ const factorialize = (num) => {
 };
 
 console.log(factorialize(5)); // 120
+/*
+factorial(3) returns 3 * factorial(2)
+factorial(2) returns 3 * 2 * factorial(1)
+factorial(1) returns 3 * 2 * 1 * factorial(0)
+factorial(0) returns 3 * 2 * 1 * 1
+
+
+
+*/
 
 //_______________________ LOOP VERSION __________________//
 

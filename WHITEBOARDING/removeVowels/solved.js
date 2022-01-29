@@ -21,3 +21,19 @@ const removeVowels = (str) => {
 // Test cases
 console.log(removeVowels('this is a test sentence'));
 console.log(removeVowels('coffee is a necessary way to start the day'));
+
+// _____________ another way________________ //
+
+const removeVowels2 = (str) => {
+  // YOUR CODE HERE
+
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let resultArr = [];
+
+  str.split('').map((letter) => {
+    if (!vowels.includes(letter)) {
+      resultArr.push(letter);
+    }
+  });
+  return resultArr.join('');
+};
