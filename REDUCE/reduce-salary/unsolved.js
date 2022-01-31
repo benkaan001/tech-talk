@@ -9,7 +9,11 @@ const staff = [
 
 // calculate the total Salary expenditure
 
-const staffingCost;
+const staffingCost = staff.reduce((acc,curr) => {
+  const {salary} = curr;
+  return acc+=salary
+
+},0)
 
 console.log(staffingCost);
 
