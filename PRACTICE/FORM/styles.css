@@ -1,0 +1,28 @@
+.form-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.employment {
+  display: flex;
+  align-items: flex-start;
+}
+
+.employment-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.gender {
+  display: flex;
+}
+.gender-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
