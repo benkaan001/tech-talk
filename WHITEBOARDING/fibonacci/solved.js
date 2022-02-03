@@ -15,14 +15,14 @@ const fib = (num) => {
   // So we can create our conditional to return the num if the number is 0 or 1
 
   if (num < 2) {
-    return num;
+    return 1;
   }
 
   return fib(num - 1) + fib(num - 2);
 };
 
-console.log(fib(5)); // 5
-console.log(fib(8)); // 21
+console.log(fib(5)); // 8
+console.log(fib(8)); // 34
 
 // const fibonacci = (num) => {
 //   if (num < 1) {

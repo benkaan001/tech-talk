@@ -37,3 +37,23 @@ const rotateLeft = (arr, d) => {
 };
 
 console.log(rotateLeft([1, 2, 3, 4, 5], 2)); // [ 3, 4, 5, 1, 2 ]
+
+//______________ alternative _______________ //
+
+let arr = [1, 2, 3, 4, 5];
+let d = 2;
+
+function myfunc(arr, d) {
+  let ending = [];
+  for (let i = arr.length - d; i < arr.length; i++) {
+    ending.push(arr[i]);
+  }
+  console.log(ending);
+
+  for (let i = 0; i < arr.length - d; i++) {
+    ending.push(arr[i]);
+  }
+  return console.log(ending);
+}
+
+myfunc(arr, d);
