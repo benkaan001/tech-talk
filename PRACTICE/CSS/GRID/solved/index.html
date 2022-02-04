@@ -18,26 +18,66 @@
       /* grid-column-gap and  grid-row-gap managethe gaps in columns and rows, respectively. Add 50px to each */
       .grid-container {
         /* YOUR CODE HERE */
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
       }
 
       /* A grid-item will be an individual card for your portfolio */
       /* Add height, padding and border values. */
       .grid-item {
         /* YOUR CODE HERE */
+        height: 300px;
 
-        /* You will need to combine your knowledge of FlexBox and CSS Grid. Set .grid-item as a flexbox, with a direction of 'column' and content that is justified 'space-between' */
+        padding: 30px;
+        text-align: center;
+        border: 1px solid #eee;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+        /* You will need to combine your knowledge of FlexBox and CSS Grid. 
+        Set .grid-item as a flexbox, with a direction of 'column' and content that is justified 'space-between' */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       h1 {
         /* YOUR CODE HERE */
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        text-align: center;
+        font-size: 1.5rem;
       }
 
       p {
         /* YOUR CODE HERE */
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        text-align: center;
       }
 
       button {
         /* YOUR CODE HERE */
+        width: 100%;
+        padding: 10px 40px;
+        background-color: bisque;
+        color: saddlebrown;
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 10px auto;
+      }
+      button:hover {
+        background-color: beige;
+        color: black;
       }
 
       /* MEDIA QUERIES */
@@ -51,18 +91,30 @@
 
       @media (max-width: 1200px) {
         /* YOUR CODE HERE */
+        .grid-container {
+          grid-template-columns: auto auto auto auto;
+        }
       }
 
       @media (max-width: 992px) {
         /* YOUR CODE HERE */
+        .grid-container {
+          grid-template-columns: auto auto auto;
+        }
       }
 
       @media (max-width: 768px) {
         /* YOUR CODE HERE */
+        .grid-container {
+          grid-template-columns: auto auto;
+        }
       }
 
       @media (max-width: 576px) {
         /* YOUR CODE HERE */
+        .grid-container {
+          grid-template-columns: auto;
+        }
       }
     </style>
   </head>

@@ -13,6 +13,9 @@
       /* Add margins of 0 to the top and bottom, and auto left and right to reinforce center alignment */
       .container {
         /* YOUR CODE HERE */
+
+        max-width: 100%;
+        margin: 0 auto;
       }
 
       /* The grid-row will hold all grid-items, i.e. all child components of the row */
@@ -21,16 +24,29 @@
       /* justify-content should be set to flex-start so that things start at the left most side of the page*/
       .grid-row {
         /* YOUR CODE HERE */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
       }
 
-      /* On desktop views, we set a flex-basis of 20% for each grid-item. This means that 5 grid-items will display on the same level. The 6th grid-item will wrap to the next “row” since we are using flex-wrap: wrap in our grid-row.
-        We set a width of 259px for certain browsers that require a width to be defined. However, the actual width is set by flex-basis. */
+      /* On desktop views, we set a flex-basis of 20% for each grid-item. 
+      This means that 5 grid-items will display on the same level. 
+      The 6th grid-item will wrap to the next “row” since we are using flex-wrap: wrap in our grid-row.
+      We set a width of 259px for certain browsers that require a width to be defined. 
+      However, the actual width is set by flex-basis. */
 
       /* A grid-item will be an individual card for your portfolio */
-      /* Add height and width values using 'height' and 'flex-basis'. Consider the difference between flex-basis and width */
-      /* Set position to relative, and add 10px of padding for our content. Box-sizing should be set to border-box */
+      /* Add height and width values using 'height' and 'flex-basis'. 
+      Consider the difference between flex-basis and width */
+      /* Set position to relative, and add 10px of padding for our content. 
+      Box-sizing should be set to border-box */
       .grid-item {
         /* YOUR CODE HERE */
+        height: 550px;
+        flex-basis: 20%;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
       }
 
       /* grid-item-content will be our actual content holder */
@@ -38,6 +54,8 @@
       .grid-item-content {
         /* YOUR CODE HERE */
         border: 1px solid #000;
+        height: 100%;
+        width: 100%;
       }
 
       /* MEDIA QUERIES */
@@ -52,24 +70,28 @@
       @media (max-width: 1200px) {
         .grid-item {
           /* YOUR CODE HERE */
+          flex-basis: 33.33%;
         }
       }
 
       @media (max-width: 992px) {
         .grid-item {
           /* YOUR CODE HERE */
+          flex-basis: 33.33%;
         }
       }
 
       @media (max-width: 768px) {
         .grid-item {
           /* YOUR CODE HERE */
+          flex-basis: 50%;
         }
       }
 
       @media (max-width: 576px) {
         .grid-item {
           /* YOUR CODE HERE */
+          flex-basis: 100%;
         }
       }
     </style>
@@ -81,26 +103,61 @@
     <div class="container">
       <div class="grid-row">
         <div class="grid-item">
-          <div class="grid-item-content">1</div>
+          <div class="grid-item-content">
+            1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure et,
+            architecto distinctio, ipsum iste asperiores eligendi blanditiis
+            amet esse molestias magni atque maxime, inventore ex illo quibusdam
+            perspiciatis veniam veritatis!
+          </div>
         </div>
         <div class="grid-item">
-          <div class="grid-item-content">2</div>
+          <div class="grid-item-content">
+            2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            qui? Esse, est asperiores. Quod magnam ipsam ea, adipisci corrupti
+            repellat rem, blanditiis quibusdam possimus assumenda incidunt,
+            minima accusamus? Expedita, nostrum!
+          </div>
         </div>
 
         <div class="grid-item">
-          <div class="grid-item-content">3</div>
+          <div class="grid-item-content">
+            3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            doloribus suscipit amet placeat ut quo ipsum odio quia enim non
+            provident quaerat eveniet praesentium reiciendis sint tempora
+            eligendi, molestias architecto.
+          </div>
         </div>
         <div class="grid-item">
-          <div class="grid-item-content">4</div>
+          <div class="grid-item-content">
+            4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            perferendis est cupiditate, iste accusamus dolorem modi quod neque
+            dolores laboriosam, placeat tempore dolorum et veniam rerum
+            recusandae ea velit sint.
+          </div>
         </div>
         <div class="grid-item">
-          <div class="grid-item-content">5</div>
+          <div class="grid-item-content">
+            5 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis iste officiis placeat ex laborum voluptatum non,
+            tempora eveniet cumque quae ut eos deleniti cum provident sequi,
+            possimus ipsam voluptatem quisquam?
+          </div>
         </div>
         <div class="grid-item">
-          <div class="grid-item-content">6</div>
+          <div class="grid-item-content">
+            6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            hic assumenda mollitia exercitationem esse accusantium earum
+            similique provident unde? Maxime ullam beatae repellendus molestias
+            fugiat ipsa voluptatum deleniti atque veritatis.
+          </div>
         </div>
         <div class="grid-item">
-          <div class="grid-item-content">7</div>
+          <div class="grid-item-content">
+            7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            est? Doloremque obcaecati exercitationem laborum dicta eligendi
+            alias molestiae aliquam, porro adipisci, illum neque ipsum nisi,
+            ipsam earum labore est similique.
+          </div>
         </div>
       </div>
     </div>
