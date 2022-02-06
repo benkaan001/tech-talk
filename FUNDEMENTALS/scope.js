@@ -80,3 +80,42 @@ function a() {
   }
 }
 a(); // 10 USD
+
+//____________  INSIDE/OUTSIDE FOR LOOP ______________ //
+
+for (var i = 0; i < 5; i++) {
+  console.log(`Inside the loop: ${i}`);
+}
+console.log(`Outside the loop: ${i}`);
+
+/* 
+Inside the loop: 0 
+Inside the loop: 1 
+Inside the loop: 2 
+Inside the loop: 3 
+Inside the loop: 4 
+Outside the loop: 5
+
+In this example i is global variable that we can access to both inside
+and outside the loop
+*/
+
+for (let i = 0; i < 5; i++) {
+  console.log(`Inside the loop: ${i}`);
+}
+console.log(`Outside the loop: ${i}`);
+
+/*
+Inside the loop: 0
+Inside the loop: 1
+Inside the loop: 2
+Inside the loop: 3
+Inside the loop: 4
+
+Uncaught ReferenceError: i is not defined.
+
+In this example i is block-scoped, which is delimited by {}. When we try to 
+access i outside the block, JS engine throws at us the ReferenceError.  
+
+
+*/
