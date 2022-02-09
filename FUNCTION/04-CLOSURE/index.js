@@ -1,9 +1,15 @@
-/* 
+/*
+
+Lexical environment is the place where the references for variables are stored in the memory
+during program execution.
+
 
 A closure is a function that preserves the outer scope in its inner scope.
 
+A closure is a function that contains references to its surrounding state.
+
 In other words, a closure is a combination of a function and its ability to remember
-variables in the outer scope. 
+variables in the outer scope.
 
 */
 
@@ -52,7 +58,7 @@ for (var i = 1; i <= 3; i++) {
 
 /*
 
-Returns 
+Returns
 
 after 4 seconds: 4
 after 4 seconds: 4
@@ -64,3 +70,35 @@ It remembers the value of i from the last iteration of the loop.
 The simplest solution would be declaring our i variable with let instead of var.
 
 */
+
+/*
+
+Notice how invoking the function expression is directly invoking the return
+function printPetName.
+
+*/
+
+function pet() {
+  const name = 'Maple';
+  return function printPetName() {
+    console.log(name);
+  };
+}
+const callMaple = pet();
+
+console.log(callMaple); // [Function: printPetName]
+callMaple(); // Maple
+
+//------------------------------------------------------//
+function counter() {
+  let count = 0;
+  return function () {
+    return count++;
+  };
+}
+
+const increment = counter();
+
+console.log(increment()); // 0
+
+console.log(increment()); // 1
