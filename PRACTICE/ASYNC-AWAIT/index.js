@@ -1,9 +1,9 @@
 /*
 async function ALWAYS returns a promise
-await always waits until the promise is settled 
+await always waits until the promise is settled
 
 notice how hello world gets printed on the console after hello there.
-Async/await allows us to run asynchronous code in a synchronous fashion. 
+Async/await allows us to run asynchronous code in a synchronous fashion.
 */
 
 const example = async () => {
@@ -45,7 +45,7 @@ getUser('susan')
 getUser('susan')
   .then((data) => getArticles(data.id))
   .then((articles) => {
-    console.log(articles); // ['four', 'five', 'six']
+    console.log(articles.articles); // ['four', 'five', 'six']
   });
 
 function getUser(name) {
