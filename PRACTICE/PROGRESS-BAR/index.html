@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgressBar</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      #wrapper {
+        height: 40px;
+        background-color: gray;
+        width: 300px;
+      }
+      #bar {
+        background-color: green;
+        height: 100%;
+        width: 0;
+      }
+      #btn {
+        margin: 40px;
+        padding: 10px;
+        border-radius: 2px;
+      }
+    </style>
+
+    <div id="wrapper">
+      <div id="bar"></div>
+    </div>
+    <button id="btn" onclick="makeProgress(5)">click</button>
+
+    <script>
+      const makeProgress = (seconds) => {
+        // console.log('clicked');
+        let bar = document.querySelector('#bar');
+        let currentPercentage = 0;
+        const intervals = setInterval(() => {
+          bar.style.width = `${currentPercentage}%`;
+          currentPercentage++;
+          if (currentPercentage >= 100) {
+            clearInterval(intervals);
+          }
+          //   console.log(`running at ${currentPercentage}`);
+        }, (seconds * 1000) / 100);
+      };
+    </script>
+  </body>
+</html>
