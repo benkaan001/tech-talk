@@ -43,3 +43,25 @@ const lookAndSay = (n) => {
 };
 
 console.log(lookAndSay(544222)); // 152432
+
+// alternative solution
+
+const lookAndSay2 = (n) => {
+  let resultArr = [];
+  let numbers = String(n).split('');
+  let object = numbers.reduce((acc, curr) => {
+    if (acc[curr]) {
+      acc[curr]++;
+    } else {
+      acc[curr] = 1;
+    }
+
+    return acc;
+  }, {});
+  for (let key in object) {
+    resultArr.push(`${key}${object[key]}`);
+  }
+  return resultArr.join('').split('').reverse().join('');
+};
+
+console.log(lookAndSay2(544222)); // 152432

@@ -1,6 +1,6 @@
 // find the max value in the array
 
-const arr = [5, 1, 3, 2, 6];
+let arr = [5, 1, 3, 2, 6];
 
 const findMax = (array) => {
   return array.reduce((acc, curr) => {
@@ -13,3 +13,14 @@ const findMax = (array) => {
 };
 
 console.log(findMax(arr));
+
+// alternative
+
+const findMax2 = (array) => {
+  let sorted = array.sort((a, b) => a - b);
+  return sorted[array.length - 1];
+};
+
+// with Math.max
+
+let maxValue = Math.max(...arr);
