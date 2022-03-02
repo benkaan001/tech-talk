@@ -77,12 +77,12 @@ function sum(param1, param2) {
 
 //_____________ FUNCTION EXPRESSIONS _________________//
 
-/* 
+/*
 JS Engine does NOT hoist function expressions or arrow functions.
 
 During the creation of the GEC, JS engine assignes 'undefined' to var add,
 when let res= add(...) is executed, add is still undefined. That's why
-we get the error stating that add is not a function
+we get the error stating that add is not a function. If we
 
 */
 
@@ -95,4 +95,4 @@ var add = function (a, b) {
 };
 
 // the same concept applies to ===> functions as well, since arrow functions are
-// just syntatic sugar for defining function expressions, they are not hoisted.
+// just syntactic sugar for defining function expressions, they are not hoisted.
