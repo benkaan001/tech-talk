@@ -1,4 +1,11 @@
 function beautifulDays(i, j, k) {
+  // start a counter
+  // create a days array and loop from i to j pushing the numbers in the range to the days array
+  // map through the days array to reverse each number
+  // convert the numbers into strings first befrore split.reverse.join
+  // loop through the days array and the numbers array
+  // if the difference is divisible by k increate the count by one
+  // return the count
   let count = 0;
   let days = [];
   for (let x = i; x <= j; x++) {
